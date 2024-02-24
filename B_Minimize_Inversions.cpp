@@ -9,6 +9,7 @@ void solve()
     vector<int> v(n, -1), u(n, -1);
     for (int i = 0; i < n; i++)
         cin >> x, v[i] = x;
+        
     for (int i = 0; i < n; i++)
         cin >> x, u[i] = x;
     vector<pair<int, int>> h;
