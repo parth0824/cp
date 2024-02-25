@@ -40,7 +40,6 @@ void solve()
         p++;
         ans = min(ans, w);
     }
-
     cout << ans << endl;
 }
 int main()
