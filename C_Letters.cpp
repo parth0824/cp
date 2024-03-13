@@ -25,7 +25,7 @@ void solve()
         }
 
         cout << j << " ";
-        cout << x - h<< endl;
+        cout << x - h << endl;
     }
 }
 int main()
