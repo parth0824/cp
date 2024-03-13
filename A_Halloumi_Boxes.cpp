@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define ll long long int
+#define ll long long int 
 void solve()
 {
     int n, k;
@@ -12,11 +12,20 @@ void solve()
         cin >> x;
         v[i] = x;
     }
-
-// 4 2 3 1 5
-// 2 3 1 4 5
-    
-
+    x = -1;
+    if (k <= 1)
+    {
+        for (auto i : v)
+        {
+            if (x > i)
+            {
+                cout << "NO" << endl;
+                return;
+            }
+            x = i;
+        }
+    }
+    cout << "YES" << endl;
 }
 int main()
 {
