@@ -16,8 +16,28 @@ void solve()
     bool chk = 0;
 
     sort(v.begin(),v.end());
+    for(int i=n-1;i>=0;i--){
+        int cnt = 0;
+        for(int j=0;j<n;j++){
+            if(i == j)continue;
+            if(v[j] % v[i] == 0 && v[j] != v[i]){
+
+            }
+            else{
+                cnt++;
+            }
+        }
+        if(cnt == n-1){
+
+
+        }
+    }
+
 
     
+
+
+
 
 
 
