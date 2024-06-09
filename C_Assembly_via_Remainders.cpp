@@ -12,13 +12,13 @@ void solve()
         v[i] = x;
     }
     vector<int> ans(n, -1);
+    
+    ans[0] = v[0]+1;
 
-    ans[0] = 985;
-    for (int i = 1; i < n; i++)
-    {
-        ans[i] = ans[i - 1] + v[i - 1];
+    for(int i=1;i<n;i++){
+        ans[i] = ans[i-1] + v[i-1];
     }
-
+    
     for (auto i : ans)
         cout << i << " ";
     cout << endl;
